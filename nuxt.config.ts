@@ -25,4 +25,9 @@ export default defineNuxtConfig({
     },
     strategy: 'prefix_except_default'
   },
+  routeRules: {
+    '/en/__nuxt_studio/**': {
+      proxy: '/__nuxt_studio/**'
+    }
+  }
 })
