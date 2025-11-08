@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     }
   },
   i18n: {
-    strategy: 'prefix_except_default',
     defaultLocale: 'en',
     locales: [{
       code: 'en',
@@ -19,6 +18,11 @@ export default defineNuxtConfig({
     }, {
       code: 'fr',
       name: 'Français',
-    }]
+    }],
+    detectBrowserLanguage: {
+      useCookie: true,
+      redirectOn: 'root'
+    },
+    strategy: 'prefix_except_default'
   },
 })
