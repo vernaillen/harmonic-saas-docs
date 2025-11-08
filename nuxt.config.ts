@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', 'nuxt-studio'],
   studio: {
-    route: '/_studio',
+    route: '/en/_studio',
     repository: {
       provider: 'github',
       owner: 'vernaillen',
